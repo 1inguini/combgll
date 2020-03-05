@@ -1,10 +1,8 @@
 # combgll
 
-## Execute  
+work in progress
 
-* Run `stack exec -- combgll-exe` to see "We're inside the application!"
-* With `stack exec -- combgll-exe --verbose` you will see the same message, with more logging.
+## About GLL algorithm
 
-## Run tests
-
-`stack test`
+* http://dotat.at/tmp/gll.pdf
+* https://link.springer.com/content/pdf/10.1007%2F978-3-662-46663-6_5.pdf
