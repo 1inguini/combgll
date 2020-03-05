@@ -1,8 +1,10 @@
 module Pre
   ( module Control.Applicative
   , module Control.Monad
+  , module Control.Monad.Except
   , module Control.Monad.State.Strict
   , module Data.Map.Strict
+  , module Data.Maybe
   -- , module Data.RAList
   , module Data.Set.Monad
   , module Data.Text
@@ -13,10 +15,12 @@ module Pre
   , module Safe
   ) where
 
-import           Control.Applicative        ((<|>))
+import           Control.Applicative
 import           Control.Monad
+import           Control.Monad.Except
 import           Control.Monad.State.Strict (State, StateT (..))
 import           Data.Map.Strict            (Map)
+import           Data.Maybe
 -- import           Data.RAList                (RAList)
 import           Data.Set.Monad             (Set)
 import           Data.Text                  (Text)
