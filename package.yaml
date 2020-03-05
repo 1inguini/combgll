@@ -1,0 +1,65 @@
+name:                combgll
+version:             0.1.0.0
+github:              1inguini/combgll
+license:             BSD3
+author:              linguini
+maintainer:          9647142@gmail.com
+copyright:           2020 linguini
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+synopsis:            parser combinator library using gll parsing algorithm
+category:            Parsing
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on Github at <https://github.com/1inguini/combgll#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- safe
+- text
+- mtl
+- vector
+# - ral
+- hashable
+- unordered-containers
+- containers
+- set-monad
+- algebraic-graphs
+
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wpartial-fields
+- -Wredundant-constraints
+
+default-extensions:
+- OverloadedStrings
+- NoImplicitPrelude
+
+library:
+  source-dirs:
+  - src
+  - pre
+
+tests:
+  combgll-test:
+    main:                Spec.hs
+    source-dirs:         test
+    dependencies:
+    - combgll
+    - hspec
+
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
