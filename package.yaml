@@ -26,8 +26,6 @@ dependencies:
 - mtl
 - vector
 # - ral
-- hashable
-- unordered-containers
 - containers
 - set-monad
 - algebraic-graphs
